@@ -7,14 +7,14 @@ This a personal library, and is not intended to be used by others. The Api may c
 ## Animations
 A collection of entities and functions that make dealing animations simpler
 
-Entities:
-*Coordinate* contains an x and y coordinate
-*Rectangle* a bounded rectangle that can be animated
+Entities:  
+**Coordinate** contains an x and y coordinate  
+**Rectangle** a bounded rectangle that can be animated  
 
 ## Colors
 A collection of entities and functions that make dealing with colors simpler
 
-Entities:
+Entities:  
 **RgbColor**  
 **HexColor**   
 
