@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+apply from: '../dependency_versions.gradle'
+
+android {
+    compileSdkVersion compileSdkVersionSet
+    buildToolsVersion buildToolsVersionSet
+
+    defaultConfig {
+        applicationId "com.boundless.jerboa.samples"
+        minSdkVersion minSdkVersionSet
+        targetSdkVersion targetSdkVersionSet
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            matchingFallbacks = ['debug']
+        }
+    }
+}
+
+dependencies {
+    implementation project(':jerboa')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+
+    implementation "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+}
