@@ -15,8 +15,8 @@ Entities:
 A collection of entities and functions that make dealing with colors simpler
 
 Entities:
-*RgbColor*
-*HexColor*
+**RgbColor**  
+**HexColor**   
 
 ## Extensions
 A collection of functions that are named in an appropriate manner that allows them to be used from simply looking at a classes autocomplete.
@@ -24,8 +24,8 @@ A collection of functions that are named in an appropriate manner that allows th
 ## Library helpers
 Classes and functions that make using a library easier
 
-Sub packages include
-- **RxJava2**
+Sub packages include  
+**RxJava2**  
 
 ## Logging
 Classes to simplify exceptions and logging. This package needs a lot of work.
