@@ -9,4 +9,14 @@ fun <E> List<E>.random(): E? {
       .first()
 }
 
-fun <E> List<E>.doesNotContain(item: E): Boolean = !contains(item)
+fun <E> List<E>.doesNotContain(item: E): Boolean {
+  return !contains(item)
+}
+
+fun <T> List<T>.containsElementWhere(predicate: (T) -> Boolean): Boolean {
+  return this.firstOrNull(predicate) == null
+}
+
+fun <T> List<T>.doesNotContainElementWhere(predicate: (T) -> Boolean): Boolean {
+  return !this.containsElementWhere(predicate)
+}

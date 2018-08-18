@@ -21,6 +21,13 @@ Entities:
 ## Extensions
 A collection of functions that are named in an appropriate manner that allows them to be used from simply looking at a classes autocomplete.
 
+Includes:
+*BitwiseFlags*
+*Int*
+*List*
+*Long*
+*String*
+
 ## Library helpers
 Classes and functions that make using a library easier
 
@@ -38,3 +45,11 @@ Platform interfaces include:
 **Analytics** Send events and exceptions to analytics.
 **ResourceProvider** For example, Strings
 **TimeWrapper** Common time behaviour
+
+## Ui
+These are classes that can be used in the ui layer of an app. They are common across platforms. i.e. any element of this package could be applicable to iOS or Android or Web
+
+Includes:
+*LifecycleReceiver* to be used by a ViewModel or Presenter
+*ItemClickListener* returns a generic class when an item is clicked
+*Orientation* enum with HORIZONTAL and VERTICAL

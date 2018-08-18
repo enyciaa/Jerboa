@@ -9,3 +9,7 @@ fun String.isValidHexidecimal(): Boolean {
 }
 
 fun String?.isNotNullOrEmpty(): Boolean = !isNullOrEmpty()
+
+fun String?.isNotNull(): Boolean = !this.isNull()
+
+fun String?.isNull(): Boolean = this == null
