@@ -14,7 +14,11 @@ fun <E> List<E>.doesNotContain(item: E): Boolean {
 }
 
 fun <T> List<T>.containsElementWhere(predicate: (T) -> Boolean): Boolean {
-  return this.firstOrNull(predicate) == null
+  for (element in this) {
+    if (predicate(element))
+      return true
+  }
+  return false
 }
 
 fun <T> List<T>.doesNotContainElementWhere(predicate: (T) -> Boolean): Boolean {

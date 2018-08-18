@@ -7,3 +7,6 @@ Adds code from Rising Tides prototype V2
 - Generic ItemClickListner
 - Orientation enum
 - Extensions
+
+### 1.1.1
+Fixes containsElementWhere
