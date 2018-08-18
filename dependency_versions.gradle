@@ -1,8 +1,4 @@
 ext {
-    // Library Version
-    appVersionCode = 010000
-    appVersionNumber = '1.0.0'
-
     // Android
     minSdkVersionSet = '21'
     targetSdkVersionSet = '27'
