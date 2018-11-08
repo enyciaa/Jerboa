@@ -1,5 +1,9 @@
-### 1.0.0
-Initial library
+### 1.1.2
+- Updates dependencies
+- Removes java testing frameworks
+
+### 1.1.1
+Fixes containsElementWhere
 
 ### 1.1.0
 Adds code from Rising Tides prototype V2
@@ -8,5 +12,5 @@ Adds code from Rising Tides prototype V2
 - Orientation enum
 - Extensions
 
-### 1.1.1
-Fixes containsElementWhere
+### 1.0.0
+Initial library
