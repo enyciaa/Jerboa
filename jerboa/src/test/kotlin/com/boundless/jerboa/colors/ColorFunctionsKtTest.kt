@@ -1,6 +1,7 @@
 package com.boundless.jerboa.colors
 
-import org.assertj.core.api.Assertions.assertThat
+import org.amshove.kluent.shouldEqual
+import org.amshove.kluent.shouldNotEqual
 import org.junit.Test
 
 class ColorFunctionsKtTest {
@@ -11,7 +12,7 @@ class ColorFunctionsKtTest {
 
     val isValid = isValidHexColor(hex)
 
-    assertThat(isValid).isFalse()
+    isValid shouldEqual false
   }
 
   @Test
@@ -20,35 +21,35 @@ class ColorFunctionsKtTest {
 
     val isValid = isValidHexColor(hex)
 
-    assertThat(isValid).isTrue()
+    isValid shouldEqual true
   }
 
   @Test
   fun givenInvalidRgb_whenCheck_thenReturnFalse() {
     val isValid = isValidRgb(0, 256, 200)
 
-    assertThat(isValid).isFalse()
+    isValid shouldEqual false
   }
 
   @Test
   fun givenValidRgb_whenCheck_thenReturnTrue() {
     val isValid = isValidRgb(0, 0, 0)
 
-    assertThat(isValid).isTrue()
+    isValid shouldEqual true
   }
 
   @Test
   fun givenWhite_whenCalculateBrightness_returnMaxBrightnes() {
     val returnedValue = calculateColorBrightness(255, 255, 255)
 
-    assertThat(returnedValue).isEqualTo(1.0)
+    returnedValue shouldEqual 1.0
   }
 
   @Test
   fun givenBlack_whenCalculateBrightness_returnMinBrightnes() {
     val returnedValue = calculateColorBrightness(0, 0, 0)
 
-    assertThat(returnedValue).isEqualTo(0.0)
+    returnedValue shouldEqual 0.0
   }
 
   @Test
@@ -57,9 +58,9 @@ class ColorFunctionsKtTest {
 
     val rgb = convertHexToRgb(hex)
 
-    assertThat(rgb.red).`as`("red").isEqualTo(255)
-    assertThat(rgb.green).`as`("green").isEqualTo(255)
-    assertThat(rgb.blue).`as`("blue").isEqualTo(255)
+    rgb.red shouldEqual 255
+    rgb.green shouldEqual 255
+    rgb.blue shouldEqual 255
   }
 
   @Test
@@ -68,7 +69,7 @@ class ColorFunctionsKtTest {
 
     val hex = convertRgbToHex(rgb)
 
-    assertThat(hex.colorWithoutHash).isEqualTo("FFFFFF")
+    hex.colorWithoutHash shouldEqual "FFFFFF"
   }
 
   @Test
@@ -76,6 +77,6 @@ class ColorFunctionsKtTest {
     val rgbFirst = generateRandomRgb()
     val rgbSecond = generateRandomRgb()
 
-    assertThat(rgbFirst).isNotEqualTo(rgbSecond)
+    rgbFirst shouldNotEqual rgbSecond
   }
 }

@@ -1,6 +1,6 @@
 package com.boundless.jerboa.extensions
 
-import org.assertj.core.api.Assertions.assertThat
+import org.amshove.kluent.shouldEqual
 import org.junit.Test
 
 class StringKtTest {
@@ -11,7 +11,7 @@ class StringKtTest {
 
     val isValid = invalidHexidecimal.isValidHexidecimal()
 
-    assertThat(isValid).isFalse()
+    isValid shouldEqual false
   }
 
   @Test
@@ -20,6 +20,6 @@ class StringKtTest {
 
     val isValid = invalidHexidecimal.isValidHexidecimal()
 
-    assertThat(isValid).isTrue()
+    isValid shouldEqual true
   }
 }
