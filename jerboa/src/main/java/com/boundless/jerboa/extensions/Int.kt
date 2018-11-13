@@ -14,12 +14,15 @@ fun Int.isEqualTo(value: Int): Boolean = this == value
 
 fun Int.isNotEqualTo(value: Int): Boolean = this != value
 
-fun Int.toIntWithinRange(max: Int, min: Int = 0): Int {
-  return when {
-    this < min -> min
-    this > max -> max
-    else -> this
-  }
+fun Int.toIntWithinRange(
+        max: Int,
+        min: Int = 0
+): Int {
+    return when {
+        this < min -> min
+        this > max -> max
+        else       -> this
+    }
 }
 
 /**

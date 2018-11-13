@@ -2,7 +2,7 @@ package com.boundless.jerboa.ui
 
 interface LifecycleReceiver {
 
-  fun onAttach()
+    fun onAttach()
 
-  fun onDetach()
+    fun onDetach()
 }
