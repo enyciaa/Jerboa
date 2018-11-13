@@ -1,3 +1,6 @@
+### 1.2.0
+- Adds coroutines dispatcher provider
+
 ### 1.1.2
 - Updates dependencies
 - Removes java testing frameworks
