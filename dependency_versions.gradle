@@ -10,6 +10,7 @@ ext {
 
     //Kotlin
     kotlinVersion = '1.3.0'
+    coreroutinesVersion = '1.0.0'
 
     //Android code libraries
     daggerVersion = '2.19'
