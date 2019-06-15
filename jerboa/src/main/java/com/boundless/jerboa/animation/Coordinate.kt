@@ -5,7 +5,7 @@ data class Coordinate(
         val y: Double
 )
 
-fun Coordinate.isInBounds(bounds: Rectangle): Boolean {
+fun Coordinate.isInBoundsOf(bounds: Rectangle): Boolean {
     if (x > bounds.left &&
         x < bounds.right &&
         y > bounds.top &&
