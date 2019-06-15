@@ -8,7 +8,7 @@ This a personal library, and is not intended to be used by others. The Api may c
 A collection of entities and functions that make dealing animations simpler
 
 Entities:  
-**Coordinate** contains an x and y coordinate that can be moved
+**Coordinate** contains an x and y coordinate that can be moved  
 **Rectangle** a bounded rectangle that can be animated  
 **Direction** D-pad directions of up, down, left, right  
 
@@ -52,8 +52,8 @@ Platform interfaces include:
 ## Ui
 These are classes that can be used in the ui layer of an app. They are common across platforms. i.e. any element of this package could be applicable to iOS or Android or Web
 
-Includes:
+Includes:  
 **LifecycleReceiver** to be used by a ViewModel or Presenter  
 **ItemClickListener** returns a generic class when an item is clicked  
-**Orientation** enum with HORIZONTAL and VERTICAL
+**Orientation** enum with HORIZONTAL and VERTICAL  
 **SectionViewState** can be extended to form section view states with a constant id
