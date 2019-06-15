@@ -8,8 +8,9 @@ This a personal library, and is not intended to be used by others. The Api may c
 A collection of entities and functions that make dealing animations simpler
 
 Entities:  
-**Coordinate** contains an x and y coordinate  
+**Coordinate** contains an x and y coordinate that can be moved
 **Rectangle** a bounded rectangle that can be animated  
+**Direction** D-pad directions of up, down, left, right  
 
 ## Colors
 A collection of entities and functions that make dealing with colors simpler
@@ -33,6 +34,7 @@ Classes and functions that make using a library easier
 
 Sub packages include  
 **RxJava2**  
+**Coroutines**  
 
 ## Logging
 Classes to simplify exceptions and logging. This package needs a lot of work.
@@ -45,11 +47,13 @@ Platform interfaces include:
 **Analytics** Send events and exceptions to analytics.  
 **ResourceProvider** For example, Strings  
 **TimeWrapper** Common time behaviour  
+**Basic music player** Simple music behaviour like play, stop, and load  
 
 ## Ui
 These are classes that can be used in the ui layer of an app. They are common across platforms. i.e. any element of this package could be applicable to iOS or Android or Web
 
 Includes:
-*LifecycleReceiver* to be used by a ViewModel or Presenter  
-*ItemClickListener* returns a generic class when an item is clicked  
-*Orientation* enum with HORIZONTAL and VERTICAL
+**LifecycleReceiver** to be used by a ViewModel or Presenter  
+**ItemClickListener** returns a generic class when an item is clicked  
+**Orientation** enum with HORIZONTAL and VERTICAL
+**SectionViewState** can be extended to form section view states with a constant id

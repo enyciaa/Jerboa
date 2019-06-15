@@ -1,3 +1,14 @@
+### 1.3.0
+- Extensions for Coordinate
+- Extensions for Rectangle
+- Direction entity
+- Basic music player interface
+- Section view state
+- Removes random number functions (kotlin now has this functionality)
+
+*Internal*
+- Starts just extension orientated design
+
 ### 1.2.0
 - Adds coroutines dispatcher provider
 

@@ -1,15 +1,14 @@
 package com.boundless.jerboa.animation
 
-fun calculateNewCoordinate(
-        startCoordinate: Coordinate,
-        angleOfMovementInRadians: Double,
-        distance: Double
-): Coordinate {
-    return Coordinate(
-            x = startCoordinate.x + (distance * Math.cos(angleOfMovementInRadians)),
-            y = startCoordinate.y + (distance * Math.sin(angleOfMovementInRadians))
-    )
-}
+import kotlin.random.Random
+
+/**
+ * Convert these to use an entity class of Angle
+ * which takes a radian or degree
+ * Check validity of angle on creation
+ *
+ * Add extension function to reverse direction
+ */
 
 fun reverseDirectionWithRadians(radians: Double): Double {
     if (radians < 0.0 || radians > 6.2832)
@@ -27,4 +26,12 @@ fun reverseDirectionWithDegrees(degrees: Double): Double {
         degrees - 180
     else
         degrees + 180
+}
+
+fun randomAngleInRadians(): Double {
+    return Math.toRadians(Random.nextDouble(0.0, 360.0))
+}
+
+fun randomAngleInDegrees(): Double {
+    return Random.nextDouble(0.0, 360.0)
 }
